@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InMD | Free & Open-Source Visual Markdown Editor</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="editor.css">
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/dist/markdown-it.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="author" content="Inled Group">
+    <meta name="description" content="InMD es un editor visual de Markdown gratuito y de código abierto. Listo para usar sin pagar y sin login"
+</head>
+<body>
+    <div class="editor-container">
+        <div class="header-content">
+        <img src="inMD.png" alt="Logotipo inMD" class="logo">
+        <h1>InMD</h1>
+        </div>
+        
+        <!-- Barra de herramientas -->
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <button id="bold" title="Negrita (Ctrl+B)">
+                    <strong>B</strong>
+                </button>
+                <button id="italic" title="Cursiva (Ctrl+I)">
+                    <em>I</em>
+                </button>
+                <button id="underline" title="Subrayado">
+                    <u>U</u>
+                </button>
+                <button id="strikethrough" title="Tachado">
+                    <s>S</s>
+                </button>
+            </div>
+            
+            <div class="toolbar-group">
+                <button id="h1" title="Título 1">H1</button>
+                <button id="h2" title="Título 2">H2</button>
+                <button id="h3" title="Título 3">H3</button>
+                <button id="h4" title="Título 4">H4</button>
+                <button id="h5" title="Título 5">H5</button>
+                <button id="h6" title="Título 6">H6</button>
+            </div>
+            
+            <div class="toolbar-group">
+                <button id="ul" title="Lista sin orden"><i class="fa-solid fa-list-ul"></i></button>
+                <button id="ol" title="Lista ordenada"><i class="fa-solid fa-list-ol"></i></button>
+                <button id="checkbox" title="Lista de tareas"><i class="fa-solid fa-list-check"></i></button>
+            </div>
+            
+            <div class="toolbar-group">
+                <button id="link" title="Enlace"><i class="fa-solid fa-link"></i></button>
+                <button id="image" title="Imagen"><i class="fa-solid fa-image"></i></button>
+                <button id="code" title="Código inline">&lt;/&gt;</button>
+                <button id="codeblock" title="Bloque de código">{ }</button>
+            </div>
+            
+            <div class="toolbar-group">
+                <button id="quote" title="Cita"><i class="fa-solid fa-quote-right"></i></button>
+                <button id="table" title="Tabla"><i class="fa-solid fa-table"></i></button>
+                <button id="hr" title="Línea horizontal">―――</button>
+            </div>
+            
+            <div class="toolbar-group">
+                <button id="undo" title="Deshacer (Ctrl+Z)">↶</button>
+                <button id="redo" title="Rehacer (Ctrl+Y)">↷</button>
+            </div>
+        </div>
+        
+        <!-- Área principal -->
+        <div class="editor-main">
+            <!-- Editor visual -->
+            <div class="editor-panel">
+                <h3>Editor Visual</h3>
+                <div id="visual-editor" contenteditable="true"></div>
+            </div>
+            
+            <!-- Código Markdown -->
+            <div class="markdown-panel">
+                <h3>Código Markdown</h3>
+                <textarea id="markdown-output" readonly></textarea>
+            </div>
+        </div>
+        
+        <!-- Botones de acción -->
+        <div class="actions">
+            <button id="copy-markdown">Copiar Markdown</button>
+            <button id="copy-html">Copiar HTML</button>
+            <button id="download-md">Descargar .md</button>
+            <button id="load-file">Cargar archivo</button>
+            <input type="file" id="file-input" accept=".md,.txt" style="display: none;">
+        </div>
+    </div>
+    
+    <script src="editor.js"></script>
+</body>
+</html>
