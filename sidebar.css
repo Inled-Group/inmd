@@ -1,0 +1,51 @@
+body {
+    margin-left: 40px;
+}
+
+.sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 48px;
+            height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px 0;
+            z-index: 1000;
+        }
+
+        .sidebar-item {
+            width: 40px;
+            height: 40px;
+            margin: 4px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .sidebar-item:hover {
+            background-color: #b7b3b3;
+        }
+
+        .sidebar-item.active {
+            background-color: #0078d4;
+        }
+
+        .sidebar-icon {
+            width: 20px;
+            height: 20px;
+        }
+        .sidebar-item.active {
+  background-color: #3B82F6; /* A nice shade of blue */
+  border-radius: 8px; /* Optional: adds a slight rounded corner */
+}
+
+/* Optional: Add a smooth transition for a better visual effect */
+.sidebar-item {
+  transition: background-color 0.3s ease;
+}
