@@ -428,6 +428,18 @@ class MarkdownEditor {
         }
     }
 
+    // Permite insertar texto o HTML en la posición del cursor desde fuera del editor
+    insertAtCursor(content, isHtml = false) {
+        this.visualEditor.focus();
+        if (isHtml) {
+            this.insertHtmlAtCursor(content);
+        } else {
+            document.execCommand('insertText', false, content);
+        }
+        this.updateMarkdown();
+        this.saveToHistory();
+    }
+
     updateMarkdown() {
         const markdown = this.htmlToMarkdown(this.visualEditor.innerHTML);
         this.markdownOutput.value = markdown;
@@ -821,5 +833,9 @@ class MarkdownEditor {
 
 // Inicializar el editor cuando se carga la página
 document.addEventListener('DOMContentLoaded', () => {
-    new MarkdownEditor();
+    const editorInstance = new MarkdownEditor();
+    // Expón el método globalmente para otros scripts (como ai.js)
+    window.insertInVisualEditor = (content, isHtml = false) => {
+        editorInstance.insertAtCursor(content, isHtml);
+    };
 });

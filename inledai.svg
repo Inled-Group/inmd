@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="210" height="297" viewBox="0 0 210 297" version="1.1" id="svg1" inkscape:version="1.4.2 (ebf0e940, 2025-05-08)" sodipodi:docname="logo-simple.svg">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:zoom="0.70644641" inkscape:cx="396.34995" inkscape:cy="561.25984" inkscape:window-width="1920" inkscape:window-height="1080" inkscape:window-x="1710" inkscape:window-y="0" inkscape:window-maximized="0" inkscape:current-layer="layer1"/>
+  <defs id="defs1">
+    <linearGradient id="linearGradient774" inkscape:collect="always">
+      <stop style="stop-color:#19e619;stop-opacity:1;" offset="0" id="stop774"/>
+      <stop style="stop-color:#19e619;stop-opacity:0;" offset="1" id="stop775"/>
+    </linearGradient>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient774" id="linearGradient775" x1="57.223584" y1="137.6509" x2="145.02268" y2="137.6509" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.3589744,0,0,1.9733334,-133.67737,-121.79622)"/>
+  </defs>
+  <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" style="stroke:#00a417;stroke-opacity:1;fill:#19e619;fill-opacity:1">
+    <path style="fill:url(#linearGradient775);fill-opacity:1;fill-rule:nonzero;stroke:#00a417;stroke-width:0;stroke-dasharray:none;stroke-opacity:1" d="M 125.18811,154.61478 102.2171,66.665825 87.197591,142.05065 l -85.6994847,7.39066 107.1484637,8.97077 18.60994,0.72065 80.98056,7.30711 -89.23349,5.91256 -9.7185,60.60346 -22.97099,-70.21134" id="path1" sodipodi:nodetypes="cccccccccc"/>
+  </g>
+</svg>
